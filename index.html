@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="Overall-Container">
+    <h1>Contact Us</h1>
+    <form class="form">
+      <div class="input-div-1">
+        <div class="input-div-2">
+          <label for="firstname">First Name <span>*</span></label>
+          <input class="input" id="firstname" type="text" name="firstname" required />
+        </div>
+        <div class="input-div-2">
+          <label for="lastname">Last Name <span>*</span></label>
+          <input class="input" id="lastname" type="text" name="lastname" required />
+        </div>
+      </div>
+      <label for="email">Email Address <span>*</span></label>
+      <input class="input" id="email" type="email" name="email" required />
+
+      <label for="Query-type">Query Type <span>*</span></label><br />
+      <div class="input-div-1">
+        <div class="input-div-2">
+          <div class="radio">
+            <input class="input" type="radio" id="General-Enquiry" name="Query-type" value="General Enquiry" />
+            <label class="pointer" for="General-Enquiry">General Enquiry</label><br />
+          </div>
+        </div>
+        <div class="input-div-2">
+          <div class="radio">
+            <input class="input" type="radio" id="Support-Request" name="Query-type" value="Support Request" />
+            <label class="pointer" for="Support-Request">Support Request</label>
+          </div>
+        </div>
+      </div>
+      <label for="Message">Message <span>*</span></label>
+      <input class="input" type="text" id="Message" name="Message" required />
+      <div class="consent-checkbox">
+        <input type="checkbox" id="consent" name="consent" value="consent" required />
+        <label for="consent"> I consent to being contacted by the team <span>*</span></label>
+      </div>
+      <div>
+        <button class="submit-button" id="Submit-btn" onclick="Submit()" type="submit">Submit</button>
+      </div>
+      <div id="success-container" style="display: none; color: green; margin-top: 10px;"></div>
+    </form>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
+      Coded by <a href="#">Mugilan</a>.
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
